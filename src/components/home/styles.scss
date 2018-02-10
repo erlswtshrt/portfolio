@@ -1,0 +1,125 @@
+@keyframes lego-1 {
+	0% {
+		transform: translate(20px, 95px);
+	}
+	10% {
+		transform: translate(20px, 95px);
+	}
+	20% {
+		transform: translate(0px, 123px);
+	}
+	70% {
+		transform: translate(0px, 123px);
+	}
+	80% {
+		transform: translate(20px, 95px);
+	}
+	100% {
+		transform: translate(20px, 95px);
+	}
+}
+
+@keyframes lego-2 {
+	0% {
+		transform: translate(-10px, -10px);
+	}
+	10% {
+		transform: translate(-10px, -10px);
+	}
+	20% {
+		transform: translate(0px, 46px);
+	}
+	70% {
+		transform: translate(0px, 46px);
+	}
+	80% {
+		transform: translate(-10px, -10px);
+	}
+	100% {
+		transform: translate(-10px, -10px);
+	}
+}
+
+@keyframes lego-3 {
+	0% {
+		transform: translate(15px, -115px);
+	}
+	10% {
+		transform: translate(15px, -115px);
+	}
+	20% {
+		transform: translate(0px, -30px);
+	}
+	70% {
+		transform: translate(0px, -30px);
+	}
+	80% {
+		transform: translate(15px, -115px);
+	}
+	100% {
+		transform: translate(15px, -115px);
+	}
+}
+
+.home {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.content-container {
+		width: 70%;
+	}
+
+	.intro-container {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.row-container {
+		display: flex;
+		align-items: stretch;
+		width: 100%;
+	}
+
+	.col-container {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		width: 100%;
+	}
+
+	.indent {
+		margin-left: 1rem;
+	}
+
+	.tile-wrapper {
+		height: 100%;
+		text-decoration: none;
+	}
+
+	.lego-1 {
+		max-height: 50px;
+		animation-name: lego-1;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+		transition-timing-function: ease-in-out;
+	}
+
+	.lego-2 {
+		max-height: 50px;
+		animation-name: lego-2;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+		transition-timing-function: ease-in-out;
+	}
+
+	.lego-3 {
+		max-height: 50px;
+		animation-name: lego-3;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+		transition-timing-function: ease-in-out;
+	}
+}
