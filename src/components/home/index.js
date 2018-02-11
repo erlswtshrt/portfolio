@@ -28,25 +28,27 @@ class Home extends Component {
 						</p>
 					</div>
 				</div>
-				<Lego
-					className="lego-1"
-					dark="#BD354E"
-					light="#FF7992"
-					medium="#E83E5D"
-				/>
-				<Lego
-					className="lego-2"
-					dark="#5E9C18"
-					light="#B8E986"
-					medium="#7ED321"
-				/>
-				<Lego
-					className="lego-3"
-					dark="#1071BD"
-					light="#51DFFD"
-					medium="#1FB7F8"
-				/>
-				<Lego dark="#C3B728" light="#FBF276" medium="#E7DA35" />
+				<div className="lego-stack">
+					<Lego
+						className="lego-1"
+						dark="#BD354E"
+						light="#FF7992"
+						medium="#E83E5D"
+					/>
+					<Lego
+						className="lego-2"
+						dark="#5E9C18"
+						light="#B8E986"
+						medium="#7ED321"
+					/>
+					<Lego
+						className="lego-3"
+						dark="#1071BD"
+						light="#51DFFD"
+						medium="#1FB7F8"
+					/>
+					<Lego dark="#C3B728" light="#FBF276" medium="#E7DA35" />
+				</div>
 				<div className="content-container">
 					<div>
 						<h2>
