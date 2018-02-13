@@ -4,6 +4,7 @@ import { browserHistory } from 'react-router';
 
 import Home from './home';
 import TokenLibraries from './tokenLibraries';
+import ExpressConstraints from './expressConstraints';
 
 class App extends Component {
 	render() {
@@ -12,6 +13,7 @@ class App extends Component {
 				<div>
 					<Route name="home" exact path="/" component={Home} />
 					<Route path="/token-libraries" component={TokenLibraries} />
+					<Route path="/express-constraints" component={ExpressConstraints} />
 				</div>
 			</Router>
 		);

@@ -71,7 +71,12 @@ class Home extends Component {
 								/>
 							</div>
 							<div className="col-container margin-left-s">
-								<Tile title="Swift Alignment Tool" />
+								<Link
+									className="tile-wrapper"
+									to="/express-constraints"
+								>
+									<Tile title="Express Constraints" />
+								</Link>
 							</div>
 						</div>
 					</div>

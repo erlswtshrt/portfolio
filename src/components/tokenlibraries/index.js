@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
-import Tile from '../Tile';
-
-class Home extends Component {
+class TokenLibraries extends Component {
 	render() {
 		return (
 			<div className="master">
@@ -45,4 +43,4 @@ class Home extends Component {
 	}
 }
 
-export default Home;
+export default TokenLibraries;

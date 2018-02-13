@@ -1,75 +1,54 @@
 @keyframes lego-1 {
 	0% {
-		transform: translate(50px, 85px);
+		transform: translate(50px, 85px) rotate(40deg);
 	}
-	10% {
-		transform: translate(40px, 95px);
+	50% {
+		transform: translate(50px, 85px) rotate(25deg);
 	}
-	20% {
+	60% {
 		transform: translate(0px, 123px);
 	}
-	70% {
+	90% {
 		transform: translate(0px, 123px);
-	}
-	80% {
-		transform: translate(40px, 95px);
 	}
 	100% {
-		transform: translate(50px, 85px);
+		transform: translate(50px, 85px) rotate(40deg);
 	}
 }
 
 @keyframes lego-2 {
 	0% {
-		transform: translate(-60px, -15px);
+		transform: translate(-60px, -15px) rotate(-30deg);
 	}
-	10% {
-		transform: translate(-50px, -10px);
+	50% {
+		transform: translate(-60px, -15px) rotate(-10deg);
 	}
-	20% {
+	60% {
 		transform: translate(0px, 46px);
 	}
-	70% {
+	90% {
 		transform: translate(0px, 46px);
-	}
-	80% {
-		transform: translate(-50px, -10px);
 	}
 	100% {
-		transform: translate(-60px, -15px);
+		transform: translate(-60px, -15px) rotate(-30deg);
 	}
 }
 
 @keyframes lego-3 {
 	0% {
-		transform: translate(45px, -120px);
+		transform: translate(45px, -120px) rotate(40deg);
 	}
-	10% {
-		transform: translate(30px, -115px);
-	}
-	20% {
-		transform: translate(0px, -30px);
-	}
-	70% {
-		transform: translate(0px, -30px);
-	}
-	80% {
-		transform: translate(30px, -115px);
-	}
-	100% {
-		transform: translate(45px, -120px);
-	}
-}
-
-@keyframes lego-stack {
-	0% {
-		transform: translate(0px, 0px);
+	50% {
+		transform: translate(45px, -120px) rotate(20deg);
 	}
 	60% {
-		transform: translate(0px, -15px);
+		transform: translate(0px, -30px);
+	}
+	90% {
+		transform: translate(0px, -30px);
 	}
 	100% {
-		transform: translate(0px, 0px);
+		transform: translate(45px, -120px) rotate(40deg);
 	}
 }
 
@@ -114,31 +93,24 @@
 	.lego-1 {
 		max-height: 50px;
 		animation-name: lego-1;
-		animation-duration: 8s;
+		animation-duration: 10s;
 		animation-iteration-count: infinite;
-		transition-timing-function: ease-in-out;
+		transition-timing-function: ease-in;
 	}
 
 	.lego-2 {
 		max-height: 50px;
 		animation-name: lego-2;
-		animation-duration: 8s;
+		animation-duration: 10s;
 		animation-iteration-count: infinite;
-		transition-timing-function: ease-in-out;
+		transition-timing-function: ease-in;
 	}
 
 	.lego-3 {
 		max-height: 50px;
 		animation-name: lego-3;
-		animation-duration: 8s;
+		animation-duration: 10s;
 		animation-iteration-count: infinite;
-		transition-timing-function: ease-in-out;
-	}
-
-	.lego-stack {
-		animation-name: lego-stack;
-		animation-duration: 8s;
-		animation-iteration-count: infinite;
-		transition-timing-function: ease-in-out;
+		transition-timing-function: ease-in;
 	}
 }
