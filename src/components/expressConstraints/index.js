@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import CodeBlock from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/styles/hljs';
 
+import Header from '../header';
+
 class ExpressConstraints extends Component {
 	render() {
 		let example1 = `
@@ -45,14 +47,15 @@ view1.constrainBelow(view2, xAlignment: .left, width: 30, height: 40, xOffset: 2
 
 		return (
 			<div className="master">
-				<div className="content-container">
-					<h1>Express Constraints</h1>
+				<Header />
+				<div className="content-container content-page-container">
+					<h2>Express Constraints</h2>
 					<p>
 						Express Constraints is a lightweight Swift framework
 						aimed a making programmatic, constraint-based layouts
 						simple.
 					</p>
-					<h2>Methodology</h2>
+					<h3>Methodology</h3>
 					<p>
 						XCode's Storyboard and auto layout create a layer of
 						abstraction between the developer and the code, and
@@ -108,12 +111,12 @@ view1.constrainBelow(view2, xAlignment: .left, width: 30, height: 40, xOffset: 2
 						behind the scenes when updated, so no messy NSConstrain
 						maintenance is required.
 					</p>
-					<h2>API</h2>
-					<h3>.constrainBelow</h3>
+					<h3>API</h3>
+					<h4>.constrainBelow</h4>
 					<CodeBlock language="swift" style={docco}>
 						{constrainBelowExample}
 					</CodeBlock>
-					<h3>.constrainAbove</h3>
+					<h4>.constrainAbove</h4>
 					<CodeBlock language="swift" style={docco}>
 						{constrainBelowExample}
 					</CodeBlock>

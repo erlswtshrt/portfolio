@@ -3,8 +3,14 @@
 	width: 100%;
 	background: $gray-10;
 
+	-webkit-transition: background 0.2s;
+
 	.content {
-		font-size: 18px;
 		padding: 10px;
 	}
+}
+
+.tile:hover {
+	background: $soft-yellow;
+	-webkit-transition: background 0.2s;
 }

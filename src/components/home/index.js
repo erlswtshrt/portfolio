@@ -8,9 +8,7 @@ class Home extends Component {
 	render() {
 		return (
 			<div className="home">
-				<div className="offset-container">
-					<h1 className="highlight-y">John Earle</h1>
-				</div>
+				<h1 className="highlight-y">John Earle</h1>
 				<div className="intro-container content-container">
 					<div>
 						<h2>Oh hey there 👋,</h2>
@@ -60,19 +58,26 @@ class Home extends Component {
 						>
 							<div className="col-container margin-right-s">
 								<Link
-									className="tile-wrapper margin-bottom-s"
+									className="link tile-wrapper margin-bottom-s"
 									to="/token-libraries"
 								>
-									<Tile title="Dynamic Mobile Token Libraries" />
+									<Tile
+										style={{
+											borderRadius: '30px 0px 0px 0px'
+										}}
+										title="Dynamic Mobile Token Libraries"
+									/>
 								</Link>
-								<Tile
-									className="margin-top-s"
-									title="iOS Token Previewer"
-								/>
+								<Link
+									className="link tile-wrapper margin-top-s"
+									to="/token-libraries"
+								>
+									<Tile title="iOS Token Previewer" />
+								</Link>
 							</div>
 							<div className="col-container margin-left-s">
 								<Link
-									className="tile-wrapper"
+									className="link tile-wrapper"
 									to="/express-constraints"
 								>
 									<Tile title="Express Constraints" />

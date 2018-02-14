@@ -9,7 +9,7 @@ import ExpressConstraints from './expressConstraints';
 class App extends Component {
 	render() {
 		return (
-			<Router>
+			<Router onUpdate={() => window.scrollTo(0, 0)}>
 				<div>
 					<Route name="home" exact path="/" component={Home} />
 					<Route path="/token-libraries" component={TokenLibraries} />
