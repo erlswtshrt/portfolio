@@ -5,7 +5,7 @@ class Tile extends Component {
 		return (
 			<div className="tile" style={this.props.style}>
 				<div className="content">
-					<h2>{this.props.title}</h2>
+					<h4>{this.props.title}</h4>
 				</div>
 			</div>
 		);
