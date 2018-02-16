@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
-import Tile from '../Tile';
-
-class Home extends Component {
+class TokenLibraries extends Component {
 	render() {
 		return (
 			<div className="master">
@@ -33,7 +31,7 @@ class Home extends Component {
 						using nunjunk templates. All icons are converted to an
 						icon font. The unicodes are then mapped to the icon type
 						and name, so that they can easily be used by developers.
-						In iOS, the library can be installed via CocoaPods. The
+						On iOS, the library can be installed via CocoaPods. The
 						library implementation is an extension of UIColor,
 						UIImage, and UIFont, as well as constants for sizing,
 						spacing and corner radius. This leads to a
@@ -45,4 +43,4 @@ class Home extends Component {
 	}
 }
 
-export default Home;
+export default TokenLibraries;

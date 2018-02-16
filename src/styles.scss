@@ -3,11 +3,14 @@ $primary-color: #333;
 
 $soft-pink: #f8d6d1;
 $soft-blue: #d0deee;
-$soft-yellow: #fff0d0;
+$soft-yellow: #fbf276;
 
 $gray-10: #f8f8f8;
+$gray-50: #8f8f8f;
 
-@import 'components/tile/styles.scss', 'components/home/styles.scss';
+@import 'components/tile/styles.scss',
+	'components/home/styles.scss',
+	'components/header/styles.scss';
 
 @font-face {
 	font-family: 'Freight Book';
@@ -17,6 +20,8 @@ $gray-10: #f8f8f8;
 body {
 	font-family: 'Freight Book';
 	color: $primary-color;
+	margin: 0;
+	padding: 0;
 
 	div {
 		margin: 0;
@@ -33,12 +38,21 @@ body {
 	}
 	h3 {
 		font-weight: 800;
-		font-size: 22px;
+		font-size: 24px;
+	}
+
+	h4 {
+		font-weight: 800;
+		font-size: 20px;
 	}
 
 	p {
 		font-size: 1.2rem;
 		line-height: 1.8rem;
+	}
+
+	.content-page-container {
+		margin-top: 7rem;
 	}
 
 	.master {
@@ -49,8 +63,15 @@ body {
 		justify-content: center;
 	}
 
+	.link {
+		text-decoration: none;
+		color: $primary-color;
+	}
+
 	.content-container {
-		width: 70%;
+		max-width: 40rem;
+		margin-right: 1rem;
+		margin-left: 1rem;
 	}
 
 	.height-100p {
@@ -90,8 +111,8 @@ body {
 			0deg,
 			transparent 0%,
 			transparent 20%,
-			#fee55c 20%,
-			#fee55c 55%,
+			$soft-yellow 20%,
+			$soft-yellow 55%,
 			transparent 55%,
 			transparent 100%
 		);
