@@ -1,4 +1,10 @@
 $font-stack: Helvetica, sans-serif;
+$spacing-s: 0.25rem;
+$spacing-m: 0.5rem;
+$spacing-l: 0.75rem;
+$spacing-xl: 1rem;
+
+$font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 
 $soft-pink: #f8d6d1;
@@ -10,30 +16,34 @@ $gray-10: #f8f8f8;
 @import 'components/tile/styles.scss', 'components/home/styles.scss';
 
 @font-face {
-	font-family: 'Freight Book';
-	src: url('../assets/Freight_Book.otf');
+	font-family: 'Apercu';
+	src: url('../assets/apercu_light.otf');
 }
 
 body {
-	font-family: 'Freight Book';
+	font-family: 'Apercu';
 	color: $primary-color;
 
-	div {
-		margin: 0;
-		padding: 0;
-	}
+	margin: 0;
+	padding: 0;
 
 	h1 {
-		font-weight: 1000;
-		font-size: 36px;
+		font-weight: 100;
+		font-size: 32px;
+		padding: 0;
+		margin: 0;
 	}
 	h2 {
-		font-weight: 800;
-		font-size: 32px;
+		font-weight: 100;
+		font-size: 28px;
+		padding: 0;
+		margin: 0;
 	}
 	h3 {
-		font-weight: 800;
+		font-weight: 100;
 		font-size: 22px;
+		padding: 0;
+		margin: 0;
 	}
 
 	p {
@@ -47,6 +57,86 @@ body {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+	}
+
+	.padding-s {
+		padding: $spacing-s;
+	}
+
+	.padding-m {
+		padding: $spacing-m;
+	}
+
+	.padding-l {
+		padding: $spacing-l;
+	}
+
+	.padding-xl {
+		padding: $spacing-xl;
+	}
+
+	.margin-s {
+		margin: $spacing-s;
+	}
+
+	.margin-m {
+		margin: $spacing-m;
+	}
+
+	.margin-l {
+		margin: $spacing-l;
+	}
+
+	.margin-xl {
+		margin: $spacing-xl;
+	}
+
+	.margin-bottom-s {
+		margin-bottom: $spacing-s;
+	}
+
+	.margin-bottom-m {
+		margin-bottom: $spacing-m;
+	}
+
+	.margin-bottom-l {
+		margin-bottom: $spacing-l;
+	}
+
+	.margin-bottom-xl {
+		margin-bottom: $spacing-xl;
+	}
+
+	.margin-top-s {
+		margin-top: $spacing-s;
+	}
+
+	.margin-top-m {
+		margin-top: $spacing-m;
+	}
+
+	.margin-top-l {
+		margin-top: $spacing-l;
+	}
+
+	.margin-top-xl {
+		margin-top: $spacing-xl;
+	}
+
+	.margin-left-s {
+		margin-left: $spacing-s;
+	}
+
+	.margin-left-m {
+		margin-left: $spacing-m;
+	}
+
+	.margin-left-l {
+		margin-left: $spacing-l;
+	}
+
+	.margin-left-xl {
+		margin-left: $spacing-xl;
 	}
 
 	.content-container {
@@ -67,57 +157,5 @@ body {
 
 	.width-50p {
 		width: 50%;
-	}
-
-	.margin-top-s {
-		margin-top: 0.125rem;
-	}
-
-	.margin-bottom-s {
-		margin-bottom: 0.125rem;
-	}
-
-	.margin-left-s {
-		margin-left: 0.125rem;
-	}
-
-	.margin-right-s {
-		margin-right: 0.125rem;
-	}
-
-	.highlight-y {
-		background: linear-gradient(
-			0deg,
-			transparent 0%,
-			transparent 20%,
-			#fee55c 20%,
-			#fee55c 55%,
-			transparent 55%,
-			transparent 100%
-		);
-	}
-
-	.highlight-b {
-		background: linear-gradient(
-			0deg,
-			transparent 0%,
-			transparent 45%,
-			#ccf4ff 45%,
-			#ccf4ff 75%,
-			transparent 75%,
-			transparent 100%
-		);
-	}
-
-	.highlight-p {
-		background: linear-gradient(
-			5deg,
-			transparent 0%,
-			transparent 25%,
-			#ffd1d9 25%,
-			#ffd1d9 65%,
-			transparent 65%,
-			transparent 100%
-		);
 	}
 }

@@ -1,144 +1,66 @@
-@keyframes lego-1 {
+@keyframes blink {
 	0% {
-		transform: translate(50px, 85px);
+		background: transparent;
 	}
-	10% {
-		transform: translate(40px, 95px);
-	}
-	20% {
-		transform: translate(0px, 123px);
-	}
-	70% {
-		transform: translate(0px, 123px);
-	}
-	80% {
-		transform: translate(40px, 95px);
+	50% {
+		background: white;
 	}
 	100% {
-		transform: translate(50px, 85px);
-	}
-}
-
-@keyframes lego-2 {
-	0% {
-		transform: translate(-60px, -15px);
-	}
-	10% {
-		transform: translate(-50px, -10px);
-	}
-	20% {
-		transform: translate(0px, 46px);
-	}
-	70% {
-		transform: translate(0px, 46px);
-	}
-	80% {
-		transform: translate(-50px, -10px);
-	}
-	100% {
-		transform: translate(-60px, -15px);
-	}
-}
-
-@keyframes lego-3 {
-	0% {
-		transform: translate(45px, -120px);
-	}
-	10% {
-		transform: translate(30px, -115px);
-	}
-	20% {
-		transform: translate(0px, -30px);
-	}
-	70% {
-		transform: translate(0px, -30px);
-	}
-	80% {
-		transform: translate(30px, -115px);
-	}
-	100% {
-		transform: translate(45px, -120px);
-	}
-}
-
-@keyframes lego-stack {
-	0% {
-		transform: translate(0px, 0px);
-	}
-	60% {
-		transform: translate(0px, -15px);
-	}
-	100% {
-		transform: translate(0px, 0px);
+		background: transparent;
 	}
 }
 
 .home {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-
-	.content-container {
-		width: 70%;
-	}
-
-	.intro-container {
-		margin-top: 2rem;
-		margin-bottom: 2rem;
-	}
-
-	.row-container {
-		display: flex;
-		align-items: stretch;
-		width: 100%;
-	}
-
-	.col-container {
-		display: flex;
-		flex-direction: column;
-		align-items: stretch;
-		width: 100%;
-	}
-
-	.indent {
-		margin-left: 1rem;
-	}
-
-	.tile-wrapper {
+	.panel {
 		height: 100%;
-		text-decoration: none;
+		overflow-x: hidden;
+		overflow-y: auto;
+		perspective: 1px;
 	}
 
-	.lego-1 {
-		max-height: 50px;
-		animation-name: lego-1;
-		animation-duration: 8s;
-		animation-iteration-count: infinite;
-		transition-timing-function: ease-in-out;
+	.green-gradient {
+		background: linear-gradient(30deg, #90c784, #69925f);
 	}
 
-	.lego-2 {
-		max-height: 50px;
-		animation-name: lego-2;
-		animation-duration: 8s;
-		animation-iteration-count: infinite;
-		transition-timing-function: ease-in-out;
+	.console-background {
+		background: #1a1c1d;
 	}
 
-	.lego-3 {
-		max-height: 50px;
-		animation-name: lego-3;
-		animation-duration: 8s;
-		animation-iteration-count: infinite;
-		transition-timing-function: ease-in-out;
+	.flex {
+		display: flex;
 	}
 
-	.lego-stack {
-		animation-name: lego-stack;
-		animation-duration: 8s;
+	.text-pink {
+		color: #f17775;
+	}
+
+	.text-blue {
+		color: #41aed7;
+	}
+
+	.input {
+		color: #cae8c3;
+	}
+
+	.input-dark {
+		color: gray;
+	}
+
+	.output {
+		color: white;
+	}
+
+	.output-pink {
+		color: #f17775;
+	}
+
+	.cursor {
+		align-self: center;
+		margin-left: 5px;
+		width: 3px;
+		height: 22px;
+		animation-name: blink;
+		animation-duration: 1s;
 		animation-iteration-count: infinite;
-		transition-timing-function: ease-in-out;
 	}
 }
