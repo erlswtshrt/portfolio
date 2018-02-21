@@ -20,6 +20,11 @@ $gray-10: #f8f8f8;
 	src: url('../assets/apercu_light.otf');
 }
 
+@font-face {
+	font-family: 'Avant';
+	src: url('../assets/avant.otf');
+}
+
 body {
 	font-family: 'Apercu';
 	color: $primary-color;
