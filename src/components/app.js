@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { browserHistory } from 'react-router';
 
 import Home from './home';
-import TokenLibraries from './tokenLibraries';
+import Work from './work';
+import ExpressConstraints from './expressConstraints';
 
 class App extends Component {
 	render() {
@@ -11,7 +12,13 @@ class App extends Component {
 			<Router>
 				<div>
 					<Route name="home" exact path="/" component={Home} />
-					<Route path="/token-libraries" component={TokenLibraries} />
+					<Route name="work" exact path="/work" component={Work} />
+					<Route
+						name="expressConstraints"
+						exact
+						path="/express-constraints"
+						component={ExpressConstraints}
+					/>
 				</div>
 			</Router>
 		);
