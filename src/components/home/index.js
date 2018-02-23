@@ -13,7 +13,7 @@ class Home extends Component {
 					className="width-100p padding-xl center flex-row header"
 					style={{ marginTop: '3rem' }}
 				>
-					<h2 className="light-mango-text">
+					<h2 className="light-primary-text">
 						$ ~/<span className="white-text">john earle</span>:
 					</h2>
 					<input
@@ -25,11 +25,11 @@ class Home extends Component {
 						placeholder="cd ..."
 					/>
 				</div>
-				<div className="panel mango-gradient padding-xl flex-col center">
+				<div className="panel primary-gradient padding-xl flex-col center">
 					<div>
 						<div className="margin-left-xl">
 							<div>
-								<h3 className="light-mango-text">
+								<h3 className="light-primary-text">
 									$ echo "$GREETING"
 								</h3>
 							</div>
@@ -48,13 +48,13 @@ class Home extends Component {
 								</div>
 							</div>
 							<div>
-								<h3 className="light-mango-text">$ ls -a</h3>
+								<h3 className="light-primary-text">$ ls -a</h3>
 							</div>
 							<div className="flex-row margin-left-l margin-bottom-xl">
-								<h3 className="light-mango-text margin-l">
+								<h3 className="light-primary-text margin-l">
 									./
 								</h3>
-								<h3 className="light-mango-text margin-l">
+								<h3 className="light-primary-text margin-l">
 									../
 								</h3>
 								<h3 className="white-text margin-l">

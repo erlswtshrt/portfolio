@@ -16,18 +16,13 @@ $light-purple: #e0d4ff;
 
 $blue: #c4edfc;
 
-$light-mango: #ff998e;
-$mango: #ff5e4d;
-$dark-mango: #9a1c0f;
+$light-primary: #ff998e;
+$primary: #ff5e4d;
+$medium-primary: #c73e30;
+$dark-primary: #9a1c0f;
 
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
-
-$soft-pink: #f8d6d1;
-$soft-blue: #d0deee;
-$soft-yellow: #fff0d0;
-
-$gray-10: #f8f8f8;
 
 @import 'components/work/styles.scss',
 	'components/expressConstraints/styles.scss';
@@ -94,8 +89,8 @@ body {
 		color: white;
 	}
 
-	.light-mango-text {
-		color: $light-mango;
+	.light-primary-text {
+		color: $light-primary;
 	}
 
 	.light-pink-text {
@@ -110,8 +105,12 @@ body {
 		color: $light-yellow;
 	}
 
-	.mango-gradient {
-		background: linear-gradient(30deg, $mango, $dark-mango);
+	.primary-gradient {
+		background: linear-gradient(30deg, $primary, $dark-primary);
+	}
+
+	.primary-gradient-small {
+		background: linear-gradient(30deg, $primary, $medium-primary);
 	}
 
 	.light-pink-background {
@@ -122,12 +121,12 @@ body {
 		background: $light-purple;
 	}
 
-	.mango-background {
-		background: $mango;
+	.primary-background {
+		background: $primary;
 	}
 
-	.light-mango-background {
-		background: $light-mango;
+	.light-primary-background {
+		background: $light-primary;
 	}
 
 	.blue-background {
@@ -136,10 +135,6 @@ body {
 
 	.light-green-background {
 		background: $light-green;
-	}
-
-	.green-background {
-		background: $mango;
 	}
 
 	.light-yellow-background {
@@ -317,7 +312,7 @@ body {
 	}
 
 	input::placeholder {
-		color: $light-mango;
+		color: $light-primary;
 	}
 
 	textarea:focus,

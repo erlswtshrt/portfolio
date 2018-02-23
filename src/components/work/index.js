@@ -5,8 +5,8 @@ class Work extends Component {
 	render() {
 		return (
 			<div className="work">
-				<div className="width-100p padding-m mango-gradient center flex-row header">
-					<h3 className="light-mango-text">
+				<div className="width-100p padding-m primary-gradient-small center flex-row header">
+					<h3 className="light-primary-text">
 						$ ~/john earle/
 						<u className="white-text">work</u>: ls -a ..
 					</h3>
@@ -93,7 +93,7 @@ class Work extends Component {
 								</div>
 							</div>
 						</div>
-						<div className="tile border-top-mango padding-xl">
+						<div className="tile border-top-primary padding-xl">
 							<h3 className="moon">Mobile Token Libraries</h3>
 							<div className="center padding-xl">
 								<p>
@@ -102,7 +102,7 @@ class Work extends Component {
 									and Windows phone.
 								</p>
 								<div className="width-100p center flex-row padding-xl">
-									<div className="light-mango-background button border-radius">
+									<div className="light-primary-background button border-radius">
 										Details
 									</div>
 								</div>
